@@ -501,7 +501,7 @@ public class WmiUtil {
                     // added something to the enum without adding it here. Tsk.
                     throw new IllegalArgumentException("Unimplemented enum type: " + propertyType.toString());
                 }
-                OleAuto.INSTANCE.VariantClear(vtProp.getPointer());
+                OleAuto.INSTANCE.VariantClear(vtProp);
             }
             clsObj.Release();
         }
